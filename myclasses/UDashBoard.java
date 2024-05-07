@@ -29,19 +29,19 @@ public class UDashBoard extends JFrame implements ActionListener {
     System.out.println("Currently in UDashBoard class");
     setResizable(false);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setTitle("The Tipton Hotel Management");
+    setTitle("The Grand Hotel Management");
     setBounds(100, 100, 927, 533);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
     setContentPane(contentPane);
     contentPane.setLayout(null);
 
-    JLabel WelcomeLbl = new JLabel("Welcome To Tipton");
+    JLabel WelcomeLbl = new JLabel("Welcome To Grand Hotel");
     WelcomeLbl.setFont(new Font("Lucida Handwriting", Font.PLAIN, 35));
-    WelcomeLbl.setForeground(Color.GRAY);
+    WelcomeLbl.setForeground(Color.DARK_GRAY);
     WelcomeLbl.setHorizontalAlignment(SwingConstants.CENTER);
     WelcomeLbl.setBounds(254, 11, 389, 78);
     contentPane.add(WelcomeLbl);
@@ -52,12 +52,12 @@ public class UDashBoard extends JFrame implements ActionListener {
     contentPane.add(design_LG_panel);
 
     JPanel design_W_Panel = new JPanel();
-    design_W_Panel.setBackground(Color.WHITE);
+    design_W_Panel.setBackground(Color.DARK_GRAY);
     design_W_Panel.setBounds(59, 0, 15, 494);
     contentPane.add(design_W_Panel);
 
     JPanel design_G_Panel = new JPanel();
-    design_G_Panel.setBackground(Color.GRAY);
+    design_G_Panel.setBackground(Color.WHITE);
     design_G_Panel.setBounds(84, 0, 15, 494);
     contentPane.add(design_G_Panel);
 

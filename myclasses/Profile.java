@@ -29,22 +29,22 @@ public class Profile extends JFrame implements ActionListener {
   public Profile() {
     System.out.println("Currently in Profile class");
     setResizable(false);
-    setTitle("The Tipton Hotel Management System");
+    setTitle("The Grand Hotel Management System");
     setIconImage(
         Toolkit.getDefaultToolkit().getImage(Profile.class.getResource("../images/titleIcon.png")));
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
 
     setContentPane(contentPane);
     contentPane.setLayout(null);
 
     JPanel panel = new JPanel();
-    panel.setBackground(Color.DARK_GRAY);
+    panel.setBackground(Color.WHITE);
     panel.setBounds(533, 153, 322, 224);
     contentPane.add(panel);
     panel.setLayout(null);
@@ -83,14 +83,14 @@ public class Profile extends JFrame implements ActionListener {
 
     JLabel ProfileInformationLbl = new JLabel("Profile Information");
     ProfileInformationLbl.setHorizontalAlignment(SwingConstants.CENTER);
-    ProfileInformationLbl.setForeground(new Color(101, 119, 179));
+    ProfileInformationLbl.setForeground(new Color(102, 102, 102));
     ProfileInformationLbl.setFont(new Font("Pristina", Font.BOLD, 40));
     ProfileInformationLbl.setBounds(303, 10, 297, 81);
     contentPane.add(ProfileInformationLbl);
 
     editButton = new JButton("Edit Info");
     editButton.setOpaque(false);
-    editButton.setForeground(new Color(101, 119, 179));
+    editButton.setForeground(new Color(102, 102, 102));
     editButton.setFont(new Font("Times New Roman", Font.BOLD, 17));
     editButton.setBorder(BorderFactory.createEmptyBorder());
     editButton.setBackground(new Color(0, 0, 0, 0));

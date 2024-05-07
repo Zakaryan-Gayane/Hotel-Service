@@ -42,15 +42,15 @@ public class ForgetPass3 extends JFrame implements ActionListener {
   public ForgetPass3() {
     System.out.println("Currently in ForgetPass3 class");
     setResizable(false);
-    setTitle("The Tipton Hotel Management System");
+    setTitle("The Grand Hotel Management System");
     setIconImage(
         Toolkit.getDefaultToolkit().getImage(Login.class.getResource("../images/titleIcon.png")));
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
 
     setContentPane(contentPane);
@@ -69,13 +69,13 @@ public class ForgetPass3 extends JFrame implements ActionListener {
     contentPane.add(backButton);
 
     JLabel forget = new JLabel("Reset Password");
-    forget.setForeground(Color.WHITE);
+    forget.setForeground(Color.DARK_GRAY);
     forget.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     forget.setBounds(363, 10, 147, 50);
     contentPane.add(forget);
 
     JLabel newPasslabel = new JLabel("New Password :");
-    newPasslabel.setForeground(Color.WHITE);
+    newPasslabel.setForeground(Color.DARK_GRAY);
     newPasslabel.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     newPasslabel.setBounds(469, 224, 147, 37);
     contentPane.add(newPasslabel);
@@ -86,7 +86,7 @@ public class ForgetPass3 extends JFrame implements ActionListener {
     newPass.setFont(newPasslFont);
     newPass.setVisible(true);
     newPass.setOpaque(false);
-    newPass.setForeground(new Color(219, 226, 233));
+    newPass.setForeground(new Color(102, 102, 102));
     newPass.setBorder(BorderFactory.createEmptyBorder());
     Border newPassBorder = BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(128, 128, 128));
     newPass.setBorder(newPassBorder);
@@ -94,7 +94,7 @@ public class ForgetPass3 extends JFrame implements ActionListener {
     contentPane.add(newPass);
 
     JLabel confirmPassLbl = new JLabel("Confirm Password :");
-    confirmPassLbl.setForeground(Color.WHITE);
+    confirmPassLbl.setForeground(Color.DARK_GRAY);
     confirmPassLbl.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     confirmPassLbl.setBounds(469, 276, 184, 37);
     contentPane.add(confirmPassLbl);
@@ -104,7 +104,7 @@ public class ForgetPass3 extends JFrame implements ActionListener {
     Font confpassFont = new Font("Monospace", Font.BOLD, 18);
     confirmPass.setFont(confpassFont);
     confirmPass.setOpaque(false);
-    confirmPass.setForeground(new Color(219, 226, 233));
+    confirmPass.setForeground(new Color(102, 102, 102));
     confirmPass.setBorder(BorderFactory.createEmptyBorder());
     Border confirmPassBorder =
         BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(128, 128, 128));

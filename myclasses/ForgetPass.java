@@ -36,28 +36,28 @@ public class ForgetPass extends JFrame implements ActionListener {
   public ForgetPass() {
     System.out.println("Currently in ForgetPass class");
     setResizable(false);
-    setTitle("The Tipton Hotel Management System");
+    setTitle("The Grand Hotel Management System");
     setIconImage(
         Toolkit.getDefaultToolkit().getImage(Login.class.getResource("../images/titleIcon.png")));
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
 
     setContentPane(contentPane);
     contentPane.setLayout(null);
 
     JLabel forget = new JLabel("Reset Password");
-    forget.setForeground(Color.WHITE);
+    forget.setForeground(Color.DARK_GRAY);
     forget.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     forget.setBounds(363, 10, 147, 50);
     contentPane.add(forget);
 
     JLabel username = new JLabel("Username:");
-    username.setForeground(Color.WHITE);
+    username.setForeground(Color.DARK_GRAY);
     username.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     username.setBounds(504, 236, 94, 25);
     contentPane.add(username);
@@ -68,7 +68,7 @@ public class ForgetPass extends JFrame implements ActionListener {
     userField.setFont(userfieldFont);
     userField.setVisible(true);
     userField.setOpaque(false);
-    userField.setForeground(new Color(219, 226, 233));
+    userField.setForeground(new Color(102, 102, 102));
     userField.setBorder(BorderFactory.createEmptyBorder());
     Border userFieldBorder = BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(128, 128, 128));
     userField.setBorder(userFieldBorder);

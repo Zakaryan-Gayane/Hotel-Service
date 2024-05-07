@@ -58,8 +58,8 @@ public class Edit extends JFrame implements ActionListener {
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
 
     setContentPane(contentPane);

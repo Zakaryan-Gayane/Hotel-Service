@@ -48,7 +48,7 @@ public class ManageRoom extends JFrame implements ActionListener {
     setBounds(100, 100, 927, 533);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
     setContentPane(contentPane);
@@ -65,7 +65,7 @@ public class ManageRoom extends JFrame implements ActionListener {
     contentPane.add(back_btn);
 
     JLabel manageRoom_lbl = new JLabel("Manage Room");
-    manageRoom_lbl.setForeground(Color.LIGHT_GRAY);
+    manageRoom_lbl.setForeground(Color.DARK_GRAY);
     manageRoom_lbl.setFont(new Font("Comic Sans MS", Font.BOLD, 20));
     manageRoom_lbl.setBounds(10, 3, 180, 34);
     contentPane.add(manageRoom_lbl);

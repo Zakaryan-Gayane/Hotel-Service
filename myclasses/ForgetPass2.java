@@ -34,15 +34,15 @@ public class ForgetPass2 extends JFrame implements ActionListener {
   public ForgetPass2() {
     System.out.println("Currently in ForgetPass2 class");
     setResizable(false);
-    setTitle("The Tipton Hotel Management System");
+    setTitle("The Grand Hotel Management System");
     setIconImage(
         Toolkit.getDefaultToolkit().getImage(Login.class.getResource("../images/titleIcon.png")));
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
 
     setContentPane(contentPane);
@@ -53,7 +53,7 @@ public class ForgetPass2 extends JFrame implements ActionListener {
     Font phoneFieldFont = new Font("Times New Roman", Font.BOLD, 18);
     phoneField.setFont(phoneFieldFont);
     phoneField.setOpaque(false);
-    phoneField.setForeground(new Color(219, 226, 233));
+    phoneField.setForeground(new Color(102, 102, 102));
     phoneField.setBorder(BorderFactory.createEmptyBorder());
     Border phoneFieldBorder = BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(128, 128, 128));
     phoneField.setBorder(phoneFieldBorder);
@@ -66,7 +66,7 @@ public class ForgetPass2 extends JFrame implements ActionListener {
     contentPane.add(next2Button);
 
     JLabel phone = new JLabel("Phone No :");
-    phone.setForeground(Color.WHITE);
+    phone.setForeground(Color.DARK_GRAY);
     phone.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     phone.setBounds(473, 248, 109, 25);
     contentPane.add(phone);
@@ -119,7 +119,7 @@ public class ForgetPass2 extends JFrame implements ActionListener {
     contentPane.add(imgLabel);
 
     JLabel forget = new JLabel("Reset Password");
-    forget.setForeground(Color.WHITE);
+    forget.setForeground(Color.DARK_GRAY);
     forget.setFont(new Font("Times New Roman", Font.PLAIN, 22));
     forget.setBounds(363, 10, 147, 50);
     contentPane.add(forget);
@@ -133,15 +133,10 @@ public class ForgetPass2 extends JFrame implements ActionListener {
 
   @Override
   public void actionPerformed(ActionEvent e) {
-    String user =
-        "Phone : "
-            + phoneField
-                .getText(); // Get the value of the phoneField and format it as "Phone : {phone
-                            // number}"
+    String user = "Phone : " + phoneField.getText(); // Get the value of the phoneField and format it as "Phone : {phone// number}"
     String user1 = phoneField.getText(); // Get the value of the phoneField
     boolean userEmpty = user1.isEmpty(); // Check if the phoneField is empty
-    boolean isFound =
-        false; // Initialize a boolean variable to keep track of whether the user's phone number is
+    boolean isFound = false; // Initialize a boolean variable to keep track of whether the user's phone number is
                // found
 
     // Check which button was clicked

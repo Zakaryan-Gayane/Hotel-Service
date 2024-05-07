@@ -80,7 +80,7 @@ Rooms Details
 AC
 Triple
 8000
-Booked
+Not Booked
 
 Rooms Details
 215
@@ -108,5 +108,12 @@ Rooms Details
 AC
 Single
 1200
+Booked
+
+Rooms Details
+120
+AC
+Triple
+5000
 Not Booked
 

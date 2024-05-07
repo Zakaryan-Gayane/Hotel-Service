@@ -28,7 +28,7 @@ public class Payment extends JFrame implements ActionListener {
     this.setBounds(100, 100, 903, 554);
     this.setLocationRelativeTo(null);
     this.setResizable(false);
-    ImageIcon img = new ImageIcon("./images/PaymentPage.png");
+    ImageIcon img = new ImageIcon("./images/PaymentPage.jpg");
     Image i = img.getImage();
     Image new_img = i.getScaledInstance(854, 480, Image.SCALE_SMOOTH);
     img = new ImageIcon(new_img);

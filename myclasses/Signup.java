@@ -51,28 +51,28 @@ public class Signup extends JFrame implements ActionListener {
   public Signup() {
     System.out.println("Currently in Signup class");
     setResizable(false);
-    setTitle("The Tipton Hotel Management System");
+    setTitle("The Grand Hotel Management System");
     setIconImage(
         Toolkit.getDefaultToolkit().getImage(Login.class.getResource("../images/titleIcon.png")));
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
 
     setContentPane(contentPane);
     contentPane.setLayout(null);
 
     JLabel SignUpText = new JLabel("SIGN UP");
-    SignUpText.setForeground(new Color(215, 210, 203));
+    SignUpText.setForeground(new Color(102, 102, 102));
     SignUpText.setFont(new Font("Verdana", Font.BOLD, 22));
     SignUpText.setBounds(203, 10, 114, 30);
     contentPane.add(SignUpText);
 
     JLabel fullName = new JLabel("Full Name :");
-    fullName.setForeground(Color.WHITE);
+    fullName.setForeground(Color.DARK_GRAY);
     fullName.setFont(new Font("Verdana", Font.PLAIN, 17));
     fullName.setBounds(11, 68, 106, 30);
     contentPane.add(fullName);
@@ -82,7 +82,7 @@ public class Signup extends JFrame implements ActionListener {
     Font fullFieldFont = new Font("Times New Roman", Font.PLAIN, 17);
     fullField.setFont(fullFieldFont);
     fullField.setOpaque(false);
-    fullField.setForeground(new Color(219, 226, 233));
+    fullField.setForeground(new Color(102, 102, 102));
     fullField.setBorder(BorderFactory.createEmptyBorder());
     Border Border = BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(128, 128, 128));
     fullField.setBorder(Border);
@@ -92,7 +92,7 @@ public class Signup extends JFrame implements ActionListener {
     username.setBounds(11, 105, 114, 30);
     Font usernameFont = new Font("Verdana", Font.PLAIN, 17);
     username.setFont(usernameFont);
-    username.setForeground(Color.white);
+    username.setForeground(Color.DARK_GRAY);
     contentPane.add(username);
 
     usernameField = new JTextField();
@@ -100,13 +100,13 @@ public class Signup extends JFrame implements ActionListener {
     Font userfieldFont = new Font("Times New Roman", Font.PLAIN, 17);
     usernameField.setFont(userfieldFont);
     usernameField.setOpaque(false);
-    usernameField.setForeground(new Color(219, 226, 233));
+    usernameField.setForeground(new Color(102, 102, 102));
     usernameField.setBorder(BorderFactory.createEmptyBorder());
     usernameField.setBorder(Border);
     contentPane.add(usernameField);
 
     JLabel phoneNumber = new JLabel("Phone Number :");
-    phoneNumber.setForeground(Color.WHITE);
+    phoneNumber.setForeground(Color.DARK_GRAY);
     phoneNumber.setFont(new Font("Verdana", Font.PLAIN, 17));
     phoneNumber.setBounds(11, 148, 150, 27);
     contentPane.add(phoneNumber);
@@ -116,13 +116,13 @@ public class Signup extends JFrame implements ActionListener {
     Font emailFieldFont = new Font("Times New Roman", Font.PLAIN, 17);
     phoneNumberField.setFont(emailFieldFont);
     phoneNumberField.setOpaque(false);
-    phoneNumberField.setForeground(new Color(219, 226, 233));
+    phoneNumberField.setForeground(new Color(102, 102, 102));
     phoneNumberField.setBorder(BorderFactory.createEmptyBorder());
     phoneNumberField.setBorder(Border);
     contentPane.add(phoneNumberField);
 
     JLabel password = new JLabel("Password :");
-    password.setForeground(Color.WHITE);
+    password.setForeground(Color.DARK_GRAY);
     password.setFont(new Font("Verdana", Font.PLAIN, 17));
     password.setBounds(11, 189, 106, 30);
     contentPane.add(password);
@@ -133,13 +133,13 @@ public class Signup extends JFrame implements ActionListener {
     passwordField.setFont(passfieldFont);
     passwordField.setEchoChar('*');
     passwordField.setOpaque(false);
-    passwordField.setForeground(new Color(219, 226, 233));
+    passwordField.setForeground(new Color(102, 102, 102));
     passwordField.setBorder(BorderFactory.createEmptyBorder());
     passwordField.setBorder(Border);
     contentPane.add(passwordField);
 
     JLabel confirmPassTxt = new JLabel("Confirm Password :");
-    confirmPassTxt.setForeground(Color.WHITE);
+    confirmPassTxt.setForeground(Color.DARK_GRAY);
     confirmPassTxt.setFont(new Font("Verdana", Font.PLAIN, 17));
     confirmPassTxt.setBounds(10, 229, 173, 30);
     contentPane.add(confirmPassTxt);
@@ -150,7 +150,7 @@ public class Signup extends JFrame implements ActionListener {
     confirmPassField.setFont(confirmPassFieldFont);
     confirmPassField.setEchoChar('*');
     confirmPassField.setOpaque(false);
-    confirmPassField.setForeground(new Color(219, 226, 233));
+    confirmPassField.setForeground(new Color(102, 102, 102));
     confirmPassField.setBorder(BorderFactory.createEmptyBorder());
     confirmPassField.setBorder(Border);
     contentPane.add(confirmPassField);
@@ -189,7 +189,7 @@ public class Signup extends JFrame implements ActionListener {
     signin = new JButton("Already have an account?");
     signin.setFont(new Font("Papyrus", Font.BOLD, 17));
     signin.setForeground(new Color(155, 157, 196));
-    signin.setBackground(Color.DARK_GRAY);
+    signin.setBackground(Color.WHITE);
     signin.setBounds(331, 405, 264, 47);
     signin.setFocusable(false);
     contentPane.add(signin);

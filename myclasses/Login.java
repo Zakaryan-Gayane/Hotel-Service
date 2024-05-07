@@ -53,22 +53,21 @@ public class Login extends JFrame implements ActionListener {
   public Login() {
     System.out.println("Currently in Login class");
     setResizable(false);
-    setTitle("The Tipton Hotel Management System");
+    setTitle("The Grand Hotel Management System");
     setIconImage(
         Toolkit.getDefaultToolkit().getImage(Login.class.getResource("../images/titleIcon.png")));
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+     contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(null);
-
     setContentPane(contentPane);
     contentPane.setLayout(null);
 
     JLabel LoginTxt = new JLabel("LOGIN");
-    LoginTxt.setForeground(new Color(215, 210, 203));
+    LoginTxt.setForeground(new Color(102, 102, 102));
     LoginTxt.setFont(new Font("Verdana", Font.BOLD, 22));
     LoginTxt.setBounds(677, 79, 83, 30);
     contentPane.add(LoginTxt);
@@ -77,15 +76,19 @@ public class Login extends JFrame implements ActionListener {
     UsernameTxt.setForeground(new Color(215, 210, 203));
     UsernameTxt.setFont(new Font("Verdana", Font.PLAIN, 18));
     UsernameTxt.setBounds(603, 141, 94, 30);
+   
     contentPane.add(UsernameTxt);
 
     usernameField = new JTextField();
     usernameField.setOpaque(false);
-    usernameField.setForeground(new Color(219, 226, 233));
+    // usernameField.setForeground(new Color(219, 226, 233));
+    usernameField.setForeground(new Color(102, 102, 102));
+
     usernameField.setFont(new Font("Times New Roman", Font.BOLD, 17));
     usernameField.setBounds(603, 181, 205, 30);
     usernameField.setBorder(BorderFactory.createEmptyBorder());
     Border userBorder = BorderFactory.createMatteBorder(0, 0, 2, 0, new Color(128, 128, 128));
+   
     usernameField.setBorder(userBorder);
     contentPane.add(usernameField);
 
@@ -97,7 +100,7 @@ public class Login extends JFrame implements ActionListener {
 
     passwordField = new JPasswordField();
     passwordField.setOpaque(false);
-    passwordField.setForeground(new Color(219, 226, 233));
+    passwordField.setForeground(new Color(102, 102, 102));
     passwordField.setFont(new Font("Verdana", Font.BOLD, 17));
     passwordField.setEchoChar('*');
     passwordField.setBorder(BorderFactory.createEmptyBorder());
@@ -130,17 +133,17 @@ public class Login extends JFrame implements ActionListener {
     EyeBtn = new JToggleButton(off);
     EyeBtn.setOpaque(false);
     EyeBtn.setForeground(Color.DARK_GRAY);
-    EyeBtn.setBackground(Color.DARK_GRAY);
+    EyeBtn.setBackground(Color.WHITE);
     EyeBtn.setBounds(818, 276, 44, 30);
     EyeBtn.setFocusable(false);
     contentPane.add(EyeBtn);
 
     forgot = new JButton("Forgotten Password ?");
     forgot.setOpaque(false);
-    forgot.setForeground(Color.LIGHT_GRAY);
+    forgot.setForeground(Color.DARK_GRAY);
     forgot.setFont(new Font("Dialog", Font.BOLD, 10));
     forgot.setBorder(BorderFactory.createEmptyBorder());
-    forgot.setBackground(Color.DARK_GRAY);
+    forgot.setBackground(Color.WHITE);
     forgot.setBounds(687, 311, 120, 19);
     forgot.setFocusable(false);
     contentPane.add(forgot);
@@ -149,7 +152,7 @@ public class Login extends JFrame implements ActionListener {
     signup.setForeground(new Color(220, 20, 60));
     signup.setBorder(BorderFactory.createEmptyBorder());
     signup.setFont(new Font("Calibri", Font.BOLD, 14));
-    signup.setBackground(Color.DARK_GRAY);
+    signup.setBackground(Color.WHITE);
     signup.setBounds(637, 410, 189, 30);
     signup.setFocusable(false);
     contentPane.add(signup);
@@ -159,7 +162,7 @@ public class Login extends JFrame implements ActionListener {
     try {
       imgLogin =
           ImageIO.read(
-              Objects.requireNonNull(Login.class.getResource("../images/LoginBackground.png")));
+              Objects.requireNonNull(Login.class.getResource("../images/LoginBackground.jpg")));
 
     } catch (IOException e) {
       // If the image fails to load, print the error
@@ -172,13 +175,13 @@ public class Login extends JFrame implements ActionListener {
     // Create a new label to display the image
     JLabel LoginPageImage = new JLabel("New label");
     LoginPageImage.setForeground(Color.DARK_GRAY);
-    LoginPageImage.setBackground(Color.DARK_GRAY);
+    LoginPageImage.setBackground(Color.WHITE);
     LoginPageImage.setIcon(new ImageIcon(imgLOGIN));
     LoginPageImage.setBounds(37, 170, 500, 300);
     contentPane.add(LoginPageImage);
 
-    JLabel LoginLblTxt = new JLabel("The Tipton Hotel");
-    LoginLblTxt.setForeground(Color.LIGHT_GRAY);
+    JLabel LoginLblTxt = new JLabel("The Grand Hotel");
+    LoginLblTxt.setForeground(Color.DARK_GRAY);
     LoginLblTxt.setFont(new Font("Modern No. 20", Font.PLAIN, 54));
     LoginLblTxt.setBounds(72, 42, 404, 82);
     contentPane.add(LoginLblTxt);

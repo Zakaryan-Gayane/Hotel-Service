@@ -28,7 +28,7 @@ public class NagadPayment extends JFrame implements ActionListener, ConfirmPayme
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setBounds(100, 100, 903, 554);
     setLocationRelativeTo(null);
-    getContentPane().setBackground(Color.GRAY);
+    getContentPane().setBackground(Color.WHITE);
     setResizable(false);
 
     ImageIcon img = new ImageIcon("./images/NagadPayment.png");

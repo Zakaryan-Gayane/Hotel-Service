@@ -42,8 +42,8 @@ public class DashBoard extends JFrame implements ActionListener {
     setBounds(100, 100, 819, 580);
     setLocationRelativeTo(null);
     JPanel contentPane = new JPanel();
-    contentPane.setForeground(Color.LIGHT_GRAY);
-    contentPane.setBackground(Color.DARK_GRAY);
+    contentPane.setForeground(Color.DARK_GRAY);
+    contentPane.setBackground(Color.WHITE);
     contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
     setContentPane(contentPane);
@@ -89,7 +89,7 @@ public class DashBoard extends JFrame implements ActionListener {
             if (row % 2 == 0) {
               component.setBackground(new Color(230, 230, 230)); // Light gray for even rows
             } else {
-              component.setBackground(Color.WHITE); // White for odd rows
+              component.setBackground(Color.LIGHT_GRAY); // White for odd rows
             }
             return component;
           }
@@ -97,8 +97,8 @@ public class DashBoard extends JFrame implements ActionListener {
 
     // Customize table header names
     JTableHeader header = table.getTableHeader();
-    header.setBackground(new Color(150, 150, 150)); // Dark gray for header background
-    header.setForeground(Color.WHITE); // White text color for header
+    header.setBackground(new Color(255, 255, 255)); // Dark gray for header background
+    header.setForeground(Color.DARK_GRAY); // White text color for header
     Font headerFont = header.getFont();
     header.setFont(headerFont.deriveFont(Font.BOLD)); // Make the font bold
 
@@ -194,8 +194,8 @@ public class DashBoard extends JFrame implements ActionListener {
     chkField_2.setHorizontalAlignment(SwingConstants.CENTER);
     chkField_2.setBorder(null);
     chkField_2.setText("Check Out");
-    chkField_2.setForeground(Color.WHITE);
-    chkField_2.setBackground(Color.DARK_GRAY);
+    chkField_2.setForeground(Color.DARK_GRAY);
+    chkField_2.setBackground(Color.WHITE);
     chkField_2.setBounds(34, 349, 89, 20);
     contentPane.add(chkField_2);
     chkField_2.setColumns(10);
@@ -203,10 +203,10 @@ public class DashBoard extends JFrame implements ActionListener {
     JTextField textField = new JTextField();
     textField.setHorizontalAlignment(SwingConstants.CENTER);
     textField.setText("Check In");
-    textField.setForeground(Color.WHITE);
+    textField.setForeground(Color.DARK_GRAY);
     textField.setColumns(10);
     textField.setBorder(null);
-    textField.setBackground(Color.DARK_GRAY);
+    textField.setBackground(Color.WHITE);
     textField.setBounds(34, 216, 89, 23);
     contentPane.add(textField);
 
@@ -224,10 +224,10 @@ public class DashBoard extends JFrame implements ActionListener {
     JTextField manage_lbl = new JTextField();
     manage_lbl.setText("Manage Room");
     manage_lbl.setHorizontalAlignment(SwingConstants.CENTER);
-    manage_lbl.setForeground(Color.WHITE);
+    manage_lbl.setForeground(Color.DARK_GRAY);
     manage_lbl.setColumns(10);
     manage_lbl.setBorder(null);
-    manage_lbl.setBackground(Color.DARK_GRAY);
+    manage_lbl.setBackground(Color.WHITE);
     manage_lbl.setBounds(34, 459, 89, 20);
     contentPane.add(manage_lbl);
 
